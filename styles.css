@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+} 
+ 
+ .container {
+     display: flex;
+     flex-direction: column;
+     background-color: rgba(54, 53, 53, 0.534);
+     width:230px;
+     height: 320px;
+     gap: 4px;
+     padding:2px;
+     border-radius: 4px;
+     filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.904));
+ }
+
+ .display {
+     display: flex;
+     height: 90px;
+     font-size: x-large;
+     justify-content: flex-end;
+     align-items: center;
+     flex-grow: 0;
+     padding-right: 20px;
+     font-size: 30px;
+ }
+
+ .row {
+     display: flex;
+     flex-grow: 1;
+     align-self: stretch;
+     justify-content: center;
+     gap: 3px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 4px;
+    padding: 2px;
+    padding-bottom: 3px;
+    filter: drop-shadow(0 0 0.50rem rgba(0, 0, 0, 0.389));
+}
+
+button {
+    width :100%;
+    border:none;
+    border-radius: 3px;
+    font-size: larger;
+    box-shadow: 0 2px rgba(92, 91, 91, 0.952);  
+}
+
+.num { 
+    background-color: rgba(196, 196, 196, 0.479);
+    color: white;
+}
+
+.num:hover {
+    background-color:  rgba(148, 148, 148, 0.479);
+}
+
+.num:active {
+    background-color:  rgba(148, 148, 148, 0.479);
+    box-shadow: 0 1px rgba(141, 87, 6, 0.918)66;
+    transform: translateY(1px);
+}
+
+.op, #eq {
+    background-color: rgba(255, 153, 0, 0.918);
+    color: white;
+}
+
+.op:hover, #eq:hover {
+    background-color: rgba(212, 131, 10, 0.918);
+}
+
+.op:active, #eq:active {
+    background-color: rgba(212, 131, 10, 0.918);
+    box-shadow: 0 1px rgba(141, 87, 6, 0.918)66;
+    transform: translateY(1px);
+}
+
+.fn, #perc {
+    background-color: rgb(231, 231, 231);
+}
+
+.fn:hover, #perc:hover {
+    background-color: rgb(179, 177, 177);
+}
+
+.fn:active, #perc:active {
+    background-color: rgb(179, 177, 177);
+    box-shadow: 0 1px rgba(81, 58, 24, 0.918)66;
+    transform: translateY(1px);
+}
